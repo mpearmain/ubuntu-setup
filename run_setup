@@ -1,0 +1,18 @@
+#!/bin/bash
+
+apt-get install r-base
+apt-get install openssl-devel
+apt-get install libcurl4-openssl-dev
+apt-get install python-pip
+apt-get install python-dev
+apt-get install python3-pip
+apt-get install python3-dev
+apt-get install openssh-server
+apt-get install libssh2-1-dev
+apt-get install libssl-dev
+
+# moved here as libarchive require sudo and the path is OS distribution dependent
+pip install -U libarchive
+
+./_python_packages
+./_R_packages
