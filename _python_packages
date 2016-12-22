@@ -1,0 +1,69 @@
+pip install -U pip
+
+# jupyter environment
+
+pip install -U jupyter
+ipython kernel install --user
+
+pip install -U ipyparallel
+jupyter nbextension enable ipyparallel
+
+pip install jupyterlab
+jupyter nbextension enable jupyterlab
+
+pip install jupyter_contrib_nbextensions
+jupyter nbextension enable jupyter_contrib_nbextensions
+
+pip install jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+jupyter contrib nbextension install --user
+
+# utils
+
+pip install -U feather-format
+pip install -U pylint
+pip install -U nose
+pip install -U happybase
+pip install -U line_profiler
+pip install -U cython
+pip install -U networkx
+pip install -U mmh3
+pip install -U libarchive
+
+# graphics
+
+pip install -U matplotlib
+pip install -U plotly
+pip install -U seaborn
+pip install -U ggplot
+
+# geo
+
+pip install -U pytz
+pip install -U pycountry
+
+# machine learning
+
+pip install -U numpy
+pip install -U scipy
+pip install -U scikit-learn
+pip install -U pandas
+pip install -U xgboost
+pip install -U xgbfi
+pip install -U statsmodels
+pip install -U ml_metrics
+pip install git+https://github.com/danielhomola/boruta_py.git!
+
+# hyper-parameter tuning packages
+pip install -U git+https://github.com/fmfn/BayesianOptimization.git
+pip install -U hyperopt
+pip install -U pymongo
+pip install -U scikit-optimize
+
+# jupyter
+pip install -U jupyterthemes
+
+pip install -U pulp
+
+# code beautifier/formater
+pip install yapf
