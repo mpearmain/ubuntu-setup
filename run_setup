@@ -10,7 +10,7 @@ apt-get install python3-dev
 apt-get install openssh-server
 apt-get install libssh2-1-dev
 apt-get install libssl-dev
-apt-get virtualenv
+apt-get install virtualenv
 
 dir_venvs=$HOME"/venv"
 dir_venv27="$dir_venvs/python2.7"
