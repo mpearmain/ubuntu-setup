@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Create local R lib to install libraries
+export R_LIBS="~/rlibs"
+mkdir -p ~/rlibs
+
+# Also create the .Renviron file so that R knows form now on where to look. 
+echo $R_LIBS="~/rlibs" >> ~/.Renviron
+
+# Download and install packages into lib
+Rscript -e 'install.packages("datasets.table", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("caret", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("Matrix", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("lubridate", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("stringr", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("dplyr", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("ggplot2", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("ranger", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("reshape2", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("recommenderlab", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("Rcpp", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("pROC", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("repr", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("pbdZMQ", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("devtools", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'devtools::install_github("IRkernel/IRdisplay")'
+Rscript -e 'devtools::install_github("IRkernel/IRkernel")'
+Rscript -e 'IRkernel::installspec()'
