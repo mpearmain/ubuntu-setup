@@ -5,7 +5,7 @@ export R_LIBS="~/rlibs"
 mkdir -p ~/rlibs
 
 # Also create the .Renviron file so that R knows form now on where to look. 
-echo $R_LIBS="~/rlibs" >> ~/.Renviron
+echo "R_LIBS='~/rlibs'" >> ~/.Renviron
 
 # Download and install packages into lib
 Rscript -e 'install.packages("data.table", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
