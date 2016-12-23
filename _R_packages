@@ -8,6 +8,7 @@ mkdir -p ~/rlibs
 echo $R_LIBS="~/rlibs" >> ~/.Renviron
 
 # Download and install packages into lib
+Rscript -e 'install.packages("data.table", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
 Rscript -e 'install.packages("datasets.table", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
 Rscript -e 'install.packages("caret", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
 Rscript -e 'install.packages("Matrix", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
@@ -22,6 +23,7 @@ Rscript -e 'install.packages("Rcpp", repos="http://cloud.r-project.org/", lib=.l
 Rscript -e 'install.packages("pROC", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
 Rscript -e 'install.packages("repr", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
 Rscript -e 'install.packages("pbdZMQ", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
+Rscript -e 'install.packages("feather", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
 Rscript -e 'install.packages("devtools", repos="http://cloud.r-project.org/", lib=.libPaths()[1])'
 Rscript -e 'devtools::install_github("IRkernel/IRdisplay")'
 Rscript -e 'devtools::install_github("IRkernel/IRkernel")'
