@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Allow access to the packages.
+chmod +x _python_packages
+chmod +x _R_packages
+
 apt-get install r-base
 apt-get install r-base-dev
 apt-get install openssl-devel
@@ -20,14 +24,14 @@ dir_venv35="$dir_venvs/python3.5"
 
 echo "creating venv $dir_venv"
 
-virtualenv --python=python2.7 dir_venv27
-virtualenv --python=python3.5 dir_venv35
+virtualenv --python=python2.7 $dir_venv27
+virtualenv --python=python3.5 $dir_venv35
 
-source "$dir_venv27/bin/activate"
+source $dir_venv27"/bin/activate"
 ./_python_packages
 deactivate
 
-source "$dir_venv35/bin/activate"
+source $dir_venv35"/bin/activate"
 ./_python_packages
 deactivate
 

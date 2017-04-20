@@ -6,4 +6,4 @@ The crux of this is useful for doing Data Science / Kaggle comps
 
 Mostly R and python in virtual envs.
 
-run `sudo run_setup`
+run `chmod +x run_setup` followed by `sudo run_setup`
