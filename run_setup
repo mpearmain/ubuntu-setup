@@ -4,19 +4,23 @@
 chmod +x _python_packages
 chmod +x _R_packages
 
-apt-get install r-base
-apt-get install r-base-dev
-apt-get install openssl-devel
-apt-get install libcurl4-openssl-dev
-apt-get install python-pip
-apt-get install python-dev
-apt-get install python3-pip
-apt-get install python3-dev
-apt-get install python3-tk
-apt-get install openssh-server
-apt-get install libssh2-1-dev
-apt-get install libssl-dev
-apt-get install virtualenv
+add-apt-repository ppa:remmina-ppa-team/remmina-master
+apt-get update
+apt-get -y install remmina remmina-plugin-rdp
+
+apt-get -y install r-base
+apt-get -y install r-base-dev
+apt-get -y install openssl-devel
+apt-get -y install libcurl4-openssl-dev
+apt-get -y install python-pip
+apt-get -y install python-dev
+apt-get -y install python3-pip
+apt-get -y install python3-dev
+apt-get -y install python3-tk
+apt-get -y install openssh-server
+apt-get -y install libssh2-1-dev
+apt-get -y install libssl-dev
+apt-get -y install virtualenv
 
 dir_venvs=$HOME"/venv"
 dir_venv27="$dir_venvs/python2.7"
