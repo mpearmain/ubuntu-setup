@@ -22,7 +22,11 @@ jupyter contrib nbextension install --user
 
 # utils
 
+pip install -U cookiecutter
+pip install -U fastparquet
 pip install -U feather-format
+pip install -U h5py
+pip install -U numexpr
 pip install -U pylint
 pip install -U nose
 pip install -U happybase
