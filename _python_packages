@@ -51,10 +51,15 @@ pip install -U scipy
 pip install -U scikit-learn
 pip install -U pandas
 pip install -U xgboost
-pip install -U xgbfi
 pip install -U statsmodels
 pip install -U ml_metrics
-pip install git+https://github.com/danielhomola/boruta_py.git!
+
+# NLP
+pip install -U fuzzywuzzy
+pip install -U gensim
+pip install -U nltk
+pip install -U tqdm
+
 
 # hyper-parameter tuning packages
 pip install -U git+https://github.com/fmfn/BayesianOptimization.git
