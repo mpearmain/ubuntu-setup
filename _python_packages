@@ -20,6 +20,8 @@ pip install jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --user
 jupyter contrib nbextension install --user
 
+pip install -U jupyterthemes
+
 # utils
 
 pip install -U cookiecutter
@@ -57,8 +59,10 @@ pip install -U pandas
 pip install -U xgboost
 pip install -U statsmodels
 pip install -U ml_metrics
+pip install -U rpy2
 
 # NLP
+
 pip install -U fuzzywuzzy
 pip install -U gensim
 pip install -U nltk
@@ -71,10 +75,6 @@ pip install -U hyperopt
 pip install -U pymongo
 pip install -U scikit-optimize
 
-# jupyter
-pip install -U jupyterthemes
-
-pip install -U pulp
 
 # code beautifier/formater
 pip install yapf
