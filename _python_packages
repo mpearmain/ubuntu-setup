@@ -75,6 +75,8 @@ pip install -U hyperopt
 pip install -U pymongo
 pip install -U scikit-optimize
 
+# Time Series
+pip install -U tsfresh
 
 # code beautifier/formater
 pip install yapf
