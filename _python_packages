@@ -34,6 +34,7 @@ pip install -U nose
 pip install -U happybase
 pip install -U line_profiler
 pip install -U cython
+pip install -U numba
 pip install -U networkx
 pip install -U mmh3
 pip install -U libarchive
@@ -65,6 +66,7 @@ pip install -U rpy2
 
 pip install -U fuzzywuzzy
 pip install -U gensim
+pip install -U spacy
 pip install -U nltk
 pip install -U tqdm
 
