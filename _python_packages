@@ -22,6 +22,9 @@ jupyter contrib nbextension install --user
 
 pip install -U jupyterthemes
 
+pip install jupyter-c-kernel
+
+
 # utils
 
 pip install -U cookiecutter
