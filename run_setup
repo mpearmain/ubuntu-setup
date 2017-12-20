@@ -4,9 +4,14 @@
 chmod +x _python_packages
 chmod +x _R_packages
 
+# Update the remote descktop client
 add-apt-repository ppa:remmina-ppa-team/remmina-master
+# I use pycharm (professional) as my python IDE so adding the PPA here.
+sudo add-apt-repository ppa:mystic-mirage/pycharm
+
 apt-get update
 apt-get -y install remmina remmina-plugin-rdp
+apt-get -y install pycharm
 
 apt-get -y install r-base
 apt-get -y install r-base-dev
@@ -21,3 +26,9 @@ apt-get -y install openssh-server
 apt-get -y install libssh2-1-dev
 apt-get -y install libssl-dev
 apt-get -y install virtualenv
+
+# Get xtra packages for seting up a vnc server
+# https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-vnc-on-ubuntu-16-04
+apt-get -y install xfce4 
+apt-get -y install xfce4-goodies 
+apt-get -y install tightvncserver
