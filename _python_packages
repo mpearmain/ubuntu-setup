@@ -1,6 +1,7 @@
 #!/bin/bash
 
 pip install -U pip
+pip install -U cython
 
 # jupyter environment
 
@@ -10,24 +11,23 @@ ipython kernel install --user
 pip install -U ipyparallel
 jupyter nbextension enable ipyparallel
 
-pip install jupyterlab
+pip install -U jupyterlab
 jupyter nbextension enable jupyterlab
 
-pip install jupyter_contrib_nbextensions
+pip install -U jupyter_contrib_nbextensions
 jupyter nbextension enable jupyter_contrib_nbextensions
 
-pip install jupyter_nbextensions_configurator
+pip install -U jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --user
 jupyter contrib nbextension install --user
 
 pip install -U jupyterthemes
-
 pip install jupyter-c-kernel
-
 
 # utils
 
 pip install -U cookiecutter
+pip install -U pyarrow
 pip install -U fastparquet
 pip install -U feather-format
 pip install -U h5py
@@ -36,7 +36,6 @@ pip install -U pylint
 pip install -U nose
 pip install -U happybase
 pip install -U line_profiler
-pip install -U cython
 pip install -U numba
 pip install -U networkx
 pip install -U mmh3
@@ -61,6 +60,8 @@ pip install -U scipy
 pip install -U scikit-learn
 pip install -U pandas
 pip install -U xgboost
+pip install -U lightgbm
+pip install -U catboost
 pip install -U statsmodels
 pip install -U ml_metrics
 pip install -U rpy2
@@ -82,6 +83,14 @@ pip install -U scikit-optimize
 
 # Time Series
 pip install -U tsfresh
+
+# Deep Learning
+pip install -U tensorflow-gpu
+pip install -U keras
+pip install -U pytorch
+
+# Frameworks
+pip install -U clipper
 
 # code beautifier/formater
 pip install yapf
