@@ -7,7 +7,7 @@ chmod +x _R_packages
 # Update the remote descktop client
 add-apt-repository ppa:remmina-ppa-team/remmina-master
 # I use pycharm (professional) as my python IDE so adding the PPA here.
-add-apt-repository ppa:mystic-mirage/pycharm
+add-apt-repository ppa:viktor-krivak/pycharm
 
 apt-get update
 apt-get -y install remmina remmina-plugin-rdp
