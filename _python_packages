@@ -94,6 +94,7 @@ pip install -U flask
 
 # AWS S3 
 pip install -U boto
+pip install -U zappa
 
 # code beautifier/formater
 pip install yapf
