@@ -13,6 +13,7 @@ jupyter nbextension enable ipyparallel
 
 pip install -U jupyterlab
 jupyter nbextension enable jupyterlab
+jupyter serverextension enable --py jupyterlab --sys-prefix
 
 pip install -U jupyter_contrib_nbextensions
 jupyter nbextension enable jupyter_contrib_nbextensions
@@ -89,8 +90,11 @@ pip install -U tensorflow-gpu
 pip install -U keras
 pip install -U pytorch
 
-# Frameworks
-pip install -U clipper
+# Api
+pip install -U flask
+
+# AWS S3 
+pip install -U boto
 
 # code beautifier/formater
 pip install yapf
