@@ -40,7 +40,6 @@ pip install -U line_profiler
 pip install -U numba
 pip install -U networkx
 pip install -U mmh3
-pip install -U libarchive
 
 # graphics
 
