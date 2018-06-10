@@ -42,6 +42,9 @@ pip install -U matplotlib
 pip install -U plotly
 pip install -U seaborn
 pip install -U ggplot
+pip install -U yellowbrick
+pip install -U scikit-plot
+
 
 # geo
 
@@ -60,6 +63,9 @@ pip install -U catboost
 pip install -U statsmodels
 pip install -U ml_metrics
 pip install -U rpy2
+pip install -U shap
+pip install -U lime
+
 
 # NLP
 
@@ -78,6 +84,7 @@ pip install -U scikit-optimize
 
 # Time Series
 pip install -U tsfresh
+pip install -U traces
 
 # Deep Learning
 pip install -U tensorflow-gpu
