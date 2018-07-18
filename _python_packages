@@ -66,6 +66,8 @@ pip install -U rpy2
 pip install -U shap
 pip install -U lime
 
+# Feature Selection
+pip install -U skrebate
 
 # NLP
 
