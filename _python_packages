@@ -18,8 +18,11 @@ jupyter nbextensions_configurator enable --user
 jupyter contrib nbextension install --user
 
 pip install -U jupyterthemes
-pip install jupyter-c-kernel
+pip install -U jupyter-c-kernel
 
+# Geomaps in Jupyterlab
+pip install -U ipyleaflet
+jupyter labextension install jupyter-leaflet
 # utils
 
 pip install -U cookiecutter
