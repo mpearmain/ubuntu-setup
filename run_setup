@@ -30,3 +30,7 @@ apt-get -y install virtualenv
 apt-get -y install xfce4 
 apt-get -y install xfce4-goodies 
 apt-get -y install tightvncserver
+
+# Install nodejs for jupyterlabs goodness
+apt-get -y install nodejs
+apt-get -y install npm
