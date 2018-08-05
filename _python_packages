@@ -9,7 +9,7 @@ pip install -U jupyter
 ipython kernel install --user
 
 pip install -U jupyterlab
-pip install jupyterlab_widgets
+pip install -U jupyterlab_widgets
 jupyter serverextension enable --py jupyterlab --sys-prefix
 pip install -U jupyter_contrib_nbextensions
 
@@ -92,7 +92,7 @@ pip install -U tsfresh
 pip install -U traces
 
 # Deep Learning
-pip install -U tensorflow-gpu
+pip install -U tensorflow
 pip install -U keras
 pip install -U pytorch
 
@@ -101,7 +101,9 @@ pip install -U flask
 
 # AWS S3 
 pip install -U boto
-pip install -U zappa
 
 # code beautifier/formater
-pip install yapf
+pip install -U yapf
+
+# Orchestration
+pip install -U apache-airflow
