@@ -4,9 +4,6 @@
 chmod +x _python_packages
 chmod +x _R_packages
 
-# Update the remote descktop client
-add-apt-repository ppa:remmina-ppa-team/remmina-master
-
 apt-get update
 apt-get -y install remmina remmina-plugin-rdp
 apt-get -y install pycharm
