@@ -53,6 +53,8 @@ pip install -U scikit-plot
 
 pip install -U pytz
 pip install -U pycountry
+pip install -U shapely
+pip install -U geopandas
 
 # machine learning
 
@@ -80,11 +82,7 @@ pip install -U spacy
 pip install -U nltk
 pip install -U tqdm
 
-
 # hyper-parameter tuning packages
-pip install -U git+https://github.com/fmfn/BayesianOptimization.git
-pip install -U hyperopt
-pip install -U pymongo
 pip install -U scikit-optimize
 
 # Time Series
@@ -94,13 +92,9 @@ pip install -U traces
 # Deep Learning
 pip install -U tensorflow
 pip install -U keras
-pip install -U pytorch
 
 # Api
 pip install -U flask
-
-# AWS S3 
-pip install -U boto
 
 # code beautifier/formater
 pip install -U yapf
