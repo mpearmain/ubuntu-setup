@@ -90,7 +90,7 @@ pip install -U tsfresh
 pip install -U traces
 
 # Deep Learning
-pip install -U tensorflow
+pip install -U tensorflow-gpu
 pip install -U keras
 
 # Api
