@@ -55,6 +55,7 @@ pip install -U pytz
 pip install -U pycountry
 pip install -U shapely
 pip install -U geopandas
+pip install -U movingpandas
 
 # machine learning
 
@@ -90,7 +91,8 @@ pip install -U tsfresh
 pip install -U traces
 
 # Deep Learning
-pip install -U tensorflow-gpu
+pip install -U tensorflow
+pip install -U torch
 pip install -U keras
 
 # Api
