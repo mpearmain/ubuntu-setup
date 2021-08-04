@@ -12,7 +12,7 @@ Then to get all the virtual ens running use:
 
 ```shell
 dir_venvs=$HOME"/venv"
-dir_venv36="$dir_venvs/python3.9"
+dir_venv39="$dir_venvs/python3.9"
 
 echo "creating venv $dir_venv"
 
