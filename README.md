@@ -12,13 +12,13 @@ Then to get all the virtual ens running use:
 
 ```shell
 dir_venvs=$HOME"/venv"
-dir_venv36="$dir_venvs/python3.6"
+dir_venv36="$dir_venvs/python3.9"
 
 echo "creating venv $dir_venv"
 
-virtualenv --python=python3.6 $dir_venv36
+virtualenv --python=python3.9 $dir_venv39
 
-source $dir_venv36"/bin/activate"
+source $dir_venv39"/bin/activate"
 ./_python_packages
 deactivate
 
